@@ -1,0 +1,6 @@
+@import "tailwindcss";
+@import "@nuxt/ui";
+
+body {
+	transition: color .3s linear, background-color .3s linear;
+}
