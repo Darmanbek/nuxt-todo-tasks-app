@@ -1,7 +1,7 @@
 <script setup lang="ts"></script>
 <template>
-	<div class="min-h-screen w-screen flex">
-		<LayoutSideBarLeft />
+	<div class="min-h-screen flex">
+		<LayoutSidebarLeftLayout />
 		<main class="flex-1 flex flex-col gap-5 p-5">
 			<LayoutHeader />
 			<section class="flex-1 flex flex-col">
@@ -16,6 +16,6 @@
 			</section>
 			<LayoutFooter />
 		</main>
-		<LayoutSideBarRight />
+		<LayoutSidebarRightLayout />
 	</div>
 </template>

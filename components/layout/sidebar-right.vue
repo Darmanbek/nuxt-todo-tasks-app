@@ -12,7 +12,7 @@ const isDark = computed({
 })
 </script>
 <template>
-	<aside class="w-64 border-l border-default p-6 flex flex-col gap-6">
+	<div class="flex p-6 flex-col gap-6 h-full overflow-y-auto">
 		<div class="flex flex-col gap-6">
 			<div class="flex gap-3 items-center justify-between">
 				<h3 class="font-bold text-center text-base">Привет, Пользователь</h3>
@@ -38,5 +38,5 @@ const isDark = computed({
 			>Сделано с <img src="/logo.svg" alt="Nuxt" :width="18" :height="18" />
 			автором
 		</UButton>
-	</aside>
+	</div>
 </template>

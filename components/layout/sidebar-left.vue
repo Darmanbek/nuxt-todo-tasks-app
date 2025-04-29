@@ -1,8 +1,6 @@
 <script setup lang="ts">
 import type { NavigationMenuItem } from "@nuxt/ui"
 
-const { isMobile } = useResponsive()
-
 const items = ref<NavigationMenuItem>([
 	{
 		label: "Все задачи",
@@ -32,7 +30,7 @@ const items = ref<NavigationMenuItem>([
 ])
 </script>
 <template>
-	<aside class="w-64 border-r-1 border-default">
+	<div class="h-full overflow-y-auto">
 		<div class="flex flex-col px-3 py-6 text-center gap-8">
 			<h3 class="text-2xl font-bold">СПИСОК-ДЕЛ</h3>
 			<UButton class="w-full justify-center">Добавить новую задачу</UButton>
@@ -45,5 +43,5 @@ const items = ref<NavigationMenuItem>([
 			}"
 			class="data-[orientation=vertical]:w-full gap-2 px-3"
 		/>
-	</aside>
+	</div>
 </template>
